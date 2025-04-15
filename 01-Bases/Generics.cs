@@ -1,5 +1,3 @@
-using System.Xml;
-
 partial class Program
 {
 
@@ -9,10 +7,9 @@ partial class Program
         string[] names = { "Juan", "Luis", "Diana" };
         int[] numbers = { 1, 2, 3, 25 };
 
-        Console.WriteLine($"Tamaño del arreglo numerico {GetArrayLength(numbers)}");
+        WriteLine($"Tamaño del arreglo numerico {GetArrayLength(numbers)}");
 
-        Console.WriteLine($"Tamaño del arreglo nombres {GetArrayLength(names)}");
-
+        WriteLine($"Tamaño del arreglo nombres {GetArrayLength(names)}");
 
         Box<int> numberBox = new Box<int> { Content = 50 };
         Box<string> stringBox = new Box<string> { Content = "Ahora soy Texto" };
@@ -36,6 +33,6 @@ class Box<T>
 
     public void Show()
     {
-        Console.WriteLine($"Contenido: {Content}");
+        WriteLine($"Contenido: {Content}");
     }
 }

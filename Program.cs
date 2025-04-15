@@ -2,6 +2,8 @@
 {
   static void Main(string[] args)
   {
+
+    #region Seccion1
     //Variables();
     //DataTypes();
     //ShowNumericTypes();
@@ -18,6 +20,20 @@
     //InventoryManager();
     //ListDictionary();
     //DataStructures();
-    Generics();
+    //Generics();
+    #endregion
+
+    #region seccion2
+    //Conditionals();
+    //Loops();
+    //FizzBuzz();
+    #endregion
+
+
+    #region seccion3
+    LoopControlExamples();
+
+
+    #endregion
   } 
 }

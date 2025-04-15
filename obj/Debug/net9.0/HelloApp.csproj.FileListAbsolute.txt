@@ -12,3 +12,4 @@ C:\Cursos\NET_CORE\curso_C#\HelloApp\obj\Debug\net9.0\refint\HelloApp.dll
 C:\Cursos\NET_CORE\curso_C#\HelloApp\obj\Debug\net9.0\HelloApp.pdb
 C:\Cursos\NET_CORE\curso_C#\HelloApp\obj\Debug\net9.0\HelloApp.genruntimeconfig.cache
 C:\Cursos\NET_CORE\curso_C#\HelloApp\obj\Debug\net9.0\ref\HelloApp.dll
+C:\Cursos\NET_CORE\curso_C#\HelloApp\obj\Debug\net9.0\HelloApp.sourcelink.json
