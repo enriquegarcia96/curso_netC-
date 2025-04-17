@@ -34,7 +34,13 @@
     //LoopControlExamples();
     //LoopGame();
     //Conversions();
-    ConvertionToDateTime();
+    //ConvertionToDateTime();
+    //Functions();
+    //PrintMultiplicationTable(7,15);
+    //PrintMultiplicationTable(number: 10, tableLimit: 15);
+    PrintFactorialTable();
+
+
     #endregion
   }
 }
