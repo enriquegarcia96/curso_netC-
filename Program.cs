@@ -31,8 +31,9 @@
 
 
     #region seccion3
-    LoopControlExamples();
-
+    //LoopControlExamples();
+    //LoopGame();
+    Conversions();
 
     #endregion
   } 
