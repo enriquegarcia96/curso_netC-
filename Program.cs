@@ -40,8 +40,10 @@
     //PrintMultiplicationTable(number: 10, tableLimit: 15);
     //PrintFactorialTable();
     //Tuples();
-    AnonymousFunctions();
-
+    //AnonymousFunctions();
+    //TestingClass();
+    //Properties();
+    Methods();
     #endregion
   }
 }
