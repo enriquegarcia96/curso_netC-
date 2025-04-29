@@ -54,7 +54,8 @@
     //Inheritance();          
     //AbstracClassExamples();
     //Visibility();
-    Tarea6();
+    //Tarea6();
+    HandleException();
     #endregion
   }
 }
