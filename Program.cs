@@ -55,7 +55,8 @@
     //AbstracClassExamples();
     //Visibility();
     //Tarea6();
-    HandleException();
+    //HandleException();
+    Collections();
     #endregion
   }
 }
