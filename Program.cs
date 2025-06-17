@@ -56,7 +56,8 @@
     //Visibility();
     //Tarea6();
     //HandleException();
-    Collections();
+    //Collections();
+    Linq();
     #endregion
   }
 }
