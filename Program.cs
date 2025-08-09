@@ -57,7 +57,8 @@
     //Tarea6();
     //HandleException();
     //Collections();
-    Linq();
+    //Linq();
+    AdvancedLinq.Program.AdvancedLINQ();
     #endregion
   }
 }
