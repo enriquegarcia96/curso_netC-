@@ -1,5 +1,3 @@
-using System.Diagnostics.Metrics;
-
 namespace AdvancedLinq
 {
   class Character
