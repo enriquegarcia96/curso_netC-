@@ -1,3 +1,5 @@
+using System.Diagnostics.Metrics;
+
 namespace AdvancedLinq
 {
   class Character
@@ -59,7 +61,7 @@ namespace AdvancedLinq
                 //WriteLine($"👥 Equipo: {team.Key}");
                 foreach (var character in team)
                 {
-                  //  WriteLine($" - {character.Name}");
+                    //  WriteLine($" - {character.Name}");
                 }
             }
 
@@ -68,18 +70,32 @@ namespace AdvancedLinq
                                          join a in abilities on c.Id equals a.CharacterId
                                          select new { c.Alias, c.Name, a.Description };
 
-            WriteLine("🦸‍♂️ Personajes y sus habilidades:");
+            // WriteLine("🦸‍♂️ Personajes y sus habilidades:");
             foreach (var character in charactersWithAbilites)
             {
-                WriteLine($"{character.Alias} {character.Name} - Habilidad: {character.Description}");
+                //   WriteLine($"{character.Alias} {character.Name} - Habilidad: {character.Description}");
             }
 
+            int totalPower = statistics.Sum(s => s.Power);
+            //WriteLine($"⚡ Poder total de todos los personajes: {totalPower}");
 
+            var avengersPower = (from c in characters
+                                 join s in statistics on c.Id equals s.CharacterId
+                                 where c.Team == "Defenders"
+                                 select s.Power).Average();
+            //WriteLine($"🛡️ Promedio de poder de los Defenders: {avengersPower:F2}");
+
+            var abilitiesByCharacter = from c in characters
+                                       join a in abilities on c.Id equals a.CharacterId
+                                       group a by c.Alias into groupAbilities
+                                       select new { Character = groupAbilities.Key, Count = groupAbilities.Count() };
+
+            WriteLine("📝 Cantidad de habilidades por personaje:");
+            foreach (var character in abilitiesByCharacter)
+            {
+                WriteLine($"{character.Character}: {character.Count} habilidades");
+            }
             
-
-            // WriteLine($"⚡ Poder total de todos los personajes: {totalPower}");
-            // WriteLine($"🛡️ Promedio de poder de los Avengers: {avengersPower:F2}");
-            // WriteLine("📝 Cantidad de habilidades por personaje:");
         }
   }
 }
